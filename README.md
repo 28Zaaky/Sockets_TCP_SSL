@@ -17,3 +17,11 @@ Le client Python se connecte au serveur via un socket TCP. Après s'être authen
 ### Architecture réseau
 
 Le serveur utilise des sockets TCP pour établir des connexions avec les clients. Chaque client est géré par un thread, ce qui permet de maintenir une communication fluide et simultanée entre plusieurs utilisateurs. Les messages sont envoyés et reçus en temps réel, garantissant une messagerie interactive et sécurisée.
+
+## Prérequis
+
+Pour exécuter ce projet, vous aurez besoin des fichiers suivants :
+- **server.crt** : Certificat SSL pour le serveur.
+- **server.key** : Clé privée SSL du serveur.
+
+Ces fichiers doivent être présents dans le même répertoire que le serveur. Vous pouvez générer un certificat et une clé privée auto-signés pour un environnement de test.
